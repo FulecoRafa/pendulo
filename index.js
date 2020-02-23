@@ -12,6 +12,10 @@ let gravity = document.getElementById('gravity');
 let gravitySlider = document.getElementById('gravitySlider');
 let friction = document.getElementById('friction');
 let frictionSlider = document.getElementById('frictionSlider');
+let mass = document.getElementById('mass');
+let massSlider = document.getElementById('massSlider');
+let length = document.getElementById('length');
+let lengthSlider = document.getElementById('lengthSlider');
 
 function setup(){
     createCanvas(600, 400).parent('sketch');
@@ -41,7 +45,7 @@ function draw(){
     ellipse(x, 400-m, m, m);
     ellipse(300-m, y, m, m);
     line(0, 0, x, y);
-    a = (-gravidade)*Math.sin(teta);
+    a = (-gravidade/(r/100))*Math.sin(teta);
     v += a;
     v *= (1-atrito);
     teta += v;
@@ -65,4 +69,24 @@ function frictionHandler(){
 function changeFriction(value){
     frictionSlider.value = parseInt(frictionSlider.value)+value;
     frictionHandler();
+}
+
+function massHandler(){
+    mass.innerHTML = massSlider.value;
+    mass = massSlider.value;
+}
+
+function changeMass(value){
+    massSlider.value = parseInt(massSlider.value)+value;
+    massHandler();
+}
+
+function lengthHandler(){
+    length.innerHTML = lengthSlider.value;
+    length = lengthSlider.value;
+}
+
+function changeLength(value){
+    lengthSlider.value = parseInt(lengthSlider.value)+value;
+    lengthHandler();
 }

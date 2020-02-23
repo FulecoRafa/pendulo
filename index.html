@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        input[type="range"]{
+            width: 500px;
+        }
+    </style>
+    <head>
+        <title>Pêndulo</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Pêndulo</h1>
+        <div id="sketch"></div>
+        <h3>Gravidade: <span id="gravity">10</span></h3>1<input type="range" min="1" max="100" value="10" onchange="gravityHandler()" id="gravitySlider">100
+        <button onclick="changeGravity(-1)">-</button><button onclick="changeGravity(+1)">+</button>
+        <h3>Atrito: <span id="friction">0.5</span>%</h3>0%<input type="range" min="0" max="1000" value="10" step="5" onchange="frictionHandler()" id="frictionSlider">100%
+        <button onclick="changeFriction(-5)">-</button><button onclick="changeFriction(+5)">+</button>
+    </body>
+    <script src="./p5.js"></script>
+    <script src="./index.js"></script>
+</html>

@@ -73,7 +73,7 @@ function changeFriction(value){
 
 function massHandler(){
     mass.innerHTML = massSlider.value;
-    mass = massSlider.value;
+    m = massSlider.value;
 }
 
 function changeMass(value){
@@ -83,7 +83,7 @@ function changeMass(value){
 
 function lengthHandler(){
     length.innerHTML = lengthSlider.value;
-    length = lengthSlider.value;
+    r = lengthSlider.value;
 }
 
 function changeLength(value){

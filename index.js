@@ -90,3 +90,13 @@ function changeLength(value){
     lengthSlider.value = parseInt(lengthSlider.value)+value;
     lengthHandler();
 }
+
+gravitySlider.value = gravidade*1000;
+frictionSlider.value = atrito*1000;
+massSlider.value = m;
+lengthSlider.value = r;
+
+gravityHandler();
+frictionHandler();
+massHandler();
+lengthHandler();

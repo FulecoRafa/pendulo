@@ -12,13 +12,13 @@
     <body>
         <h1>Pêndulo</h1>
         <div id="sketch"></div>
-        <h3>Gravidade: <span id="gravity">10</span> unidades</h3>1<input type="range" min="1" max="100" value="10" onchange="gravityHandler()" id="gravitySlider">100
+        <h3>Gravidade: <span id="gravity"></span> unidades</h3>1<input type="range" min="1" max="100" value="10" oninput="gravityHandler()" id="gravitySlider">100
         <button onclick="changeGravity(-1)">-</button><button onclick="changeGravity(+1)">+</button>
-        <h3>Atrito: <span id="friction">0.5</span>%</h3>0%<input type="range" min="0" max="1000" value="10" step="5" onchange="frictionHandler()" id="frictionSlider">100%
+        <h3>Atrito: <span id="friction"></span>%</h3>0%<input type="range" min="0" max="1000" value="10" step="5" oninput="frictionHandler()" id="frictionSlider">100%
         <button onclick="changeFriction(-5)">-</button><button onclick="changeFriction(+5)">+</button>
-        <h3>Comprimento da haste: <span id="length">200</span>px</h3>50<input type="range" min="50" max="300" value="200" step="5" onchange="lengthHandler()" id="lengthSlider">300
+        <h3>Comprimento da haste: <span id="length"></span>px</h3>50<input type="range" min="50" max="300" value="200" step="5" oninput="lengthHandler()" id="lengthSlider">300
         <button onclick="changeLength(-5)">-</button><button onclick="changeLength(+5)">+</button>
-        <h3>Massa do corpo: <span id="mass">10</span> unidades</h3>5<input type="range" min="5" max="50" value="10" step="5" onchange="massHandler()" id="massSlider">20
+        <h3>Massa do corpo: <span id="mass"></span> unidades</h3>5<input type="range" min="5" max="50" value="10" step="5" oninput="massHandler()" id="massSlider">50
         <button onclick="changeMass(-5)">-</button><button onclick="changeMass(+5)">+</button>
     </body>
     <script src="./p5.js"></script>
